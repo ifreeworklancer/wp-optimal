@@ -1,0 +1,19 @@
+#work {
+  padding: 90px 0;
+  z-index: 5;
+
+  .decor-image {
+    position: absolute;
+    right: -60px;
+    bottom: -60px;
+    @extend %img;
+    width: 175px;
+    height: 175px;
+    z-index: -2;
+
+    @media (min-width: map_get($grid-breakpoints, sm)) {
+      right: -150px;
+      bottom: -40px;
+    }
+  }
+}

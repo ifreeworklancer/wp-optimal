@@ -1,0 +1,46 @@
+.form-group {
+  position: relative;
+  padding-top: 15px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid $gray-200;
+
+  &.in-focus {
+    border-color: $secondary;
+
+    label {
+      top: 0;
+      color: $secondary;
+      font-size: .625rem;
+    }
+  }
+
+  label {
+    position: absolute;
+    left: 0;
+    top: 35%;
+    margin-bottom: 0;
+    font-size: .875rem;
+    color: $body-color;
+    transition: .5s;
+
+    span {
+      font-size: .625rem;
+    }
+  }
+
+  .form-control {
+    height: auto;
+    padding: 5px 0;
+    font-size: .875rem;
+    color: $body-color;
+    background: transparent;
+    border: none;
+  }
+
+  &--textarea {
+
+    label {
+      top: 11%;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.about-item {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+
+  @media (min-width: map_get($grid-breakpoints, lg)) {
+    flex-direction: row;
+  }
+
+  &-body {
+    padding: 15px;
+    order: 2;
+
+    @media (min-width: map_get($grid-breakpoints, sm)) {
+      padding: 20px 30px;
+    }
+
+    @media (min-width: map_get($grid-breakpoints, lg)) {
+      width: 55%;
+      order: 1;
+      padding: 30px 40px;
+    }
+
+    @media (min-width: map_get($grid-breakpoints, xl)) {
+      padding: 50px 60px;
+    }
+  }
+
+  &-prev {
+    position: relative;
+    padding-bottom: 60%;
+    order: 1;
+
+    @media (min-width: map_get($grid-breakpoints, lg)) {
+      padding-bottom: 0;
+      width: 45%;
+      order: 2;
+    }
+
+    figure {
+      @extend %pos;
+      @extend %img;
+    }
+  }
+}

@@ -1,0 +1,71 @@
+#certificates {
+  padding: 30px 0 135px;
+  z-index: 5;
+}
+
+.certificates-item {
+
+  .decor-image {
+    @extend %img;
+    position: absolute;
+    top: -25px;
+    left: -140px;
+    width: 200px;
+    height: 200px;
+    z-index: -2;
+  }
+
+  &-logo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    &-col {
+      max-width: 25%;
+      padding: 0 15px;
+      margin-bottom: 15px;
+
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+
+  &__description {
+    margin-bottom: 20px;
+  }
+}
+
+.certificates-slider {
+  margin-bottom: 80px;
+
+  @media (min-width: map_get($grid-breakpoints, lg)) {
+    margin-bottom: 0;
+  }
+
+  .flickity-page-dots {
+    bottom: -40px;
+
+    li {
+      background: $gray-200;
+
+      &::before {
+        border-color: $secondary;
+      }
+
+      &.is-selected {
+        background: $secondary;
+      }
+    }
+  }
+
+  &-item {
+    width: 100%;
+    text-align: center;
+
+    img {
+      max-width: 100%;
+    }
+  }
+}

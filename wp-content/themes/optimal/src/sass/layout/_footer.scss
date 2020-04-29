@@ -1,0 +1,60 @@
+#app-footer {
+
+  .footer-contacts {
+    @extend %img;
+    padding: 50px 0 30px;
+  }
+
+  .footer-copyright {
+    padding: 10px 0;
+    background: $darken;
+
+    &-item {
+      font-size: .75rem;
+      color: $gray-900;
+
+      a {
+        color: $secondary;
+      }
+    }
+  }
+
+  .contacts-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    &-item {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 10px;
+      font-size: .875rem;
+      padding-right: 10px;
+
+      @media (min-width: map_get($grid-breakpoints, md)) {
+        width: 50%;
+      }
+
+      a {
+        display: block;
+        margin-bottom: 10px;
+        color: #fff;
+      }
+    }
+  }
+
+  .contacts-col {
+
+    &__text {
+      color: #fff;
+      font-size: .875rem;
+      margin-bottom: 15px;
+    }
+  }
+
+  .logo {
+
+    img {
+      max-width: 100%;
+    }
+  }
+}

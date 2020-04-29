@@ -1,0 +1,36 @@
+.custom-slider {
+
+  .flickity-page-dots {
+    bottom: 25px;
+
+    li {
+      position: relative;
+      opacity: 1;
+      width: 10px;
+      height: 10px;
+      background: #fff;
+      margin: 0 10px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 17px;
+        height: 17px;
+        border: 1.5px solid #fff;
+        border-radius: 50%;
+        opacity: 0;
+        transition: .5s;
+      }
+
+      &.is-selected {
+
+        &::before {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

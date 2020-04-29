@@ -1,0 +1,47 @@
+$primary: #FA3B31;
+$secondary: #019D99;
+$light: #fff;
+$dark: #475461;
+$darken: #394450;
+
+$gray-200: #CDD5DC;
+$gray-300: #CCE4E4;
+$gray-900: #89939D;
+
+$body-color: $dark;
+$body-bg: #EAF5F5;
+
+$font-size-base: 1rem;
+$font-family-base: 'PT Sans Caption', sans-serif;
+$headings-font-family: 'PT Sans Caption', sans-serif;
+$font-weight-base: normal;
+$headings-font-weight: bold;
+
+$link-color: $primary;
+$link-hover-decoration: none;
+
+$input-btn-border-width: 0;
+$input-btn-focus-width: 0;
+$input-btn-focus-color: rgba(#fff, 0);
+$input-btn-focus-box-shadow: 0 0 0 $input-btn-focus-width $input-btn-focus-color;
+$input-btn-font-family: $font-family-base;
+
+$btn-border-width: 1px;
+$border-radius: 5px;
+
+$btn-padding-x: 30px;
+$btn-padding-y: 20px;
+
+$h1-font-size: $font-size-base * 2.25;
+$h2-font-size: $font-size-base * 2.25;
+$h3-font-size: $font-size-base * 1.875;
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base * 1.25;
+$h6-font-size: $font-size-base * 1.125;
+
+$grid-gutter-widths: (
+        xs: 15px,
+        sm: 10px,
+        md: 10px,
+        lg: 10px,
+);

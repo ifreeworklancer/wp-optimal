@@ -1,0 +1,51 @@
+.video-play {
+  position: relative;
+  @extend %img;
+  padding-bottom: 56.25%;
+  border: 5px solid #fff;
+  box-shadow: 0 5px 15px rgba(1, 157, 153, 0.15);
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 20;
+
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.outer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(#000, 0.9);
+  z-index: 999999999999;
+
+  iframe {
+    @extend %pos;
+    margin: auto;
+  }
+
+  &::before, &::after {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 2px;
+    content: '';
+    background-color: #fff;
+    z-index: 5;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}

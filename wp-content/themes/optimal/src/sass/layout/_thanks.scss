@@ -1,0 +1,22 @@
+#page-thanks {
+  @extend %img;
+  height: 100vh;
+}
+
+.page-secondary-item {
+  text-align: center;
+  color: #fff;
+
+  &__title {
+    margin-bottom: 15px;
+  }
+
+  &__subtitle {
+    margin-bottom: 20px;
+    font-size: 1.15rem;
+
+    @media (min-width: map_get($grid-breakpoints, sm)) {
+      font-size: 1.5rem;
+    }
+  }
+}

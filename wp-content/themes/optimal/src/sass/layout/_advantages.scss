@@ -1,0 +1,88 @@
+#advantages {
+  padding: 70px 0 50px;
+}
+
+.row {
+
+  .col-lg-4 {
+
+    &:last-of-type {
+
+      .advantages-item {
+        border-right: none;
+      }
+    }
+  }
+}
+
+.advantages-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  z-index: 10;
+
+  @media (min-width: map_get($grid-breakpoints, lg)) {
+    border-right: 1px solid $gray-200;
+  }
+
+  &-prev {
+    width: 40%;
+    text-align: center;
+
+    img {
+      max-width: 90%;
+    }
+  }
+
+  &-body {
+    position: relative;
+    width: 60%;
+    padding: 30px 15px;
+
+    @media (min-width: map_get($grid-breakpoints, sm)) {
+      padding: 40px 20px;
+    }
+  }
+
+  &-count {
+    position: absolute;
+    top: 0;
+    left: -10px;
+    color: $gray-200;
+    font-weight: bold;
+    line-height: 1;
+    font-size: 4rem;
+    z-index: -2;
+
+    @media (min-width: map_get($grid-breakpoints, sm)) {
+      font-size: 5rem;
+    }
+  }
+
+  &__description {
+    font-size: .875rem;
+
+    @media (min-width: map_get($grid-breakpoints, sm)) {
+      font-size: 1rem;
+    }
+
+    @media (min-width: map_get($grid-breakpoints, lg)) {
+      font-size: .875rem;
+    }
+
+    @media (min-width: map_get($grid-breakpoints, xl)) {
+      font-size: 1rem;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+
+    a {
+      color: $secondary;
+      border-bottom: 1px solid $secondary;
+      font-weight: normal;
+    }
+  }
+}

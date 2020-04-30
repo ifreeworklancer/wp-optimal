@@ -5,7 +5,7 @@ import IMask from 'imask';
 
 window.jQuery = window.$ = jquery;
 
-(function () {
+jQuery(document).ready(function($) {
 
     let burgerMenu = $('.burger-menu'),
         menu = $('.menu');
@@ -206,4 +206,4 @@ window.jQuery = window.$ = jquery;
         distance: '200px',
         interval: 80
     });
-})(jQuery);
+});

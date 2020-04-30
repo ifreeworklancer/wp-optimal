@@ -27,7 +27,7 @@ function theme_scripts()
     wp_deregister_script('wp-embed');
 //    wp_deregister_script('jquery');
 //    wp_deregister_script('jquery-migrate');
-    wp_enqueue_script('app', get_theme_file_uri('dist/app.js'), null, '', true);
+    wp_enqueue_script('app', get_theme_file_uri('dist/app.js'), null, '', false);
 }
 
 add_action('wp_enqueue_scripts', 'theme_scripts');

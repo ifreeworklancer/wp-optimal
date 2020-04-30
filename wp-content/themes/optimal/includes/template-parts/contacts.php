@@ -16,5 +16,7 @@ $contacts_subtitle = get_field('contacts_subtitle', $pageID);
             </div>
         </div>
     </div>
-    <div id="map" style="background-image: url(<?= get_theme_file_uri('images/bg/contacts-bg.jpg') ?>);"></div>
+    <?= do_shortcode('[put_wpgm id=1]'); ?>
 </section>
+
+

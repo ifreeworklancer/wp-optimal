@@ -1,3 +1,31 @@
+form {
+
+  .wpcf7-form-control-wrap {
+    position: static;
+
+    &.user-message {
+      flex-grow: 1;
+    }
+  }
+
+  .wpcf7-not-valid-tip {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: $primary;
+    font-size: .625rem;
+  }
+
+  .wpcf7-response-output {
+    border: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    font-size: .875rem;
+    color: $secondary;
+  }
+}
+
 .form-group {
   position: relative;
   padding-top: 15px;

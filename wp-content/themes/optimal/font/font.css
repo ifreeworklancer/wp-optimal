@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Days';
+    src: url('../font/Days.eot');
+    src: url('../font/Days.eot?#iefix') format('embedded-opentype'),
+    url('../font/Days.woff2') format('woff2'),
+    url('../font/Days.woff') format('woff'),
+    url('../font/Days.ttf') format('truetype'),
+    url('../font/Days.svg#Days') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+

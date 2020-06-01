@@ -11,7 +11,7 @@ $certificates_images = get_field('certificates_images', $pageID);
     <div class="container">
         <div class="row justify-content-around">
             <div class="col-sm-8 col-lg-5 order-2 order-lg-1">
-                <div class="certificates-item reveal-left">
+                <div class="certificates-item">
                     <div class="section-description">
                         <div class="section-description__subtitle">
                             <?= $certificates_subtitle; ?>
@@ -35,7 +35,7 @@ $certificates_images = get_field('certificates_images', $pageID);
                 </div>
             </div>
             <div class="col-sm-8 col-lg-5 order-1 order-lg-2">
-                <div class="certificates-slider custom-slider reveal-right">
+                <div class="certificates-slider custom-slider">
                     <?php foreach ($certificates_images as $item) : ?>
                         <div class="certificates-slider-item">
                             <img src="<?= $item['url']; ?>" alt="certificates image">

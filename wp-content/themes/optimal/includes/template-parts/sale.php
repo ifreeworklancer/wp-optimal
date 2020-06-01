@@ -17,7 +17,7 @@ $sale_image = get_field('sale_image', $pageID);
                             <?= __('[:ru]акция[:uk]акція[:]'); ?>
                         </div>
                     </div>
-                    <div class="sale-item-body mr-lg-4 reveal-left">
+                    <div class="sale-item-body mr-lg-4">
                         <h2 class="sale-item__title">
                             <?= get_the_title($pageID); ?>
                         </h2>
@@ -29,7 +29,7 @@ $sale_image = get_field('sale_image', $pageID);
                         </a>
                     </div>
                     <img src="<?= $sale_image['url']; ?>" alt="sale"
-                         class="sale-item-image d-none d-lg-block reveal-right">
+                         class="sale-item-image d-none d-lg-block">
                 </div>
             </div>
         </div>

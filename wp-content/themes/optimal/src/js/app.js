@@ -5,7 +5,7 @@ import IMask from 'imask';
 
 window.jQuery = window.$ = jquery;
 
-jQuery(document).ready(function($) {
+jQuery(document).ready(function ($) {
 
     let burgerMenu = $('.burger-menu'),
         menu = $('.menu');
@@ -169,6 +169,20 @@ jQuery(document).ready(function($) {
 
         if ($('.certificates-slider').length) {
             new Flickity(document.querySelector('.certificates-slider'), {
+                prevNextButtons: false,
+                pageDots: true,
+                contain: true,
+                draggable: false,
+                wrapAround: true,
+                adaptiveHeight: true,
+                autoPlay: 4000,
+                pauseAutoPlayOnHover: true,
+                cellAlign: 'left'
+            });
+        }
+
+        if ($('.video-slider').length) {
+            new Flickity(document.querySelector('.video-slider'), {
                 prevNextButtons: false,
                 pageDots: true,
                 contain: true,

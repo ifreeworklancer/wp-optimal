@@ -1,5 +1,4 @@
 .custom-slider {
-
   .flickity-page-dots {
     bottom: 25px;
 
@@ -12,7 +11,7 @@
       margin: 0 10px;
 
       &::before {
-        content: '';
+        content: "";
         position: absolute;
         top: 50%;
         left: 50%;
@@ -22,14 +21,30 @@
         border: 1.5px solid #fff;
         border-radius: 50%;
         opacity: 0;
-        transition: .5s;
+        transition: 0.5s;
       }
 
       &.is-selected {
-
         &::before {
           opacity: 1;
         }
+      }
+    }
+  }
+}
+
+.video-slider {
+  width: 100%;
+  &__item {
+    width: 100%;
+    margin: 0 10px;
+  }
+  .flickity-page-dots {
+    bottom: -30px;
+    li {
+      background-color: $secondary;
+      &:before {
+        border-color: $secondary;
       }
     }
   }

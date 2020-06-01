@@ -3,14 +3,15 @@
   z-index: 200;
 
   .header-bar {
-
     &--top {
       padding: 15px 0;
       background: #fff;
     }
 
     &--bottom {
-      background: $secondary;
+      background: url("../images/bg/header-bg.svg") 50% 50% / cover no-repeat;
+      background-color: $secondary;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
     }
   }
 
@@ -31,7 +32,6 @@
   }
 
   .contacts-list {
-
     &-item {
       margin-right: 20px;
 
@@ -69,7 +69,7 @@
     opacity: 0;
     pointer-events: none;
     z-index: 100;
-    transition: transform .7s, opacity .4s;
+    transition: transform 0.7s, opacity 0.4s;
 
     &.active {
       transform: translateX(0);
@@ -91,7 +91,6 @@
         }
 
         &--output {
-
           a {
             justify-content: center;
           }
@@ -129,20 +128,18 @@
     cursor: pointer;
     background: #fff;
 
-    a, span {
-
+    a,
+    span {
       span {
         text-transform: uppercase;
-        font-size: .875rem;
+        font-size: 0.875rem;
         color: $body-color;
-        transition: .5s;
+        transition: 0.5s;
       }
     }
 
     a {
-
       &:hover {
-
         span {
           color: $primary;
         }
@@ -150,12 +147,11 @@
     }
 
     span {
-
       span {
         position: relative;
 
         &::before {
-          content: '';
+          content: "";
           position: absolute;
           top: 50%;
           transform: translateY(-50%);
@@ -165,7 +161,7 @@
           border-style: solid;
           border-width: 10px 6px 0 6px;
           border-color: $secondary transparent transparent transparent;
-          transition: .5s;
+          transition: 0.5s;
         }
       }
     }
@@ -176,11 +172,8 @@
     }
 
     &:hover {
-
       span {
-
         span {
-
           &::before {
             transform: translateY(-50%) scale(-1);
           }
@@ -193,11 +186,11 @@
 .place-select-text {
   display: flex;
   align-items: center;
-  font-size: .75rem;
+  font-size: 0.75rem;
   margin-bottom: 5px;
 
   @media (min-width: map_get($grid-breakpoints, md)) {
-    font-size: .875rem;
+    font-size: 0.875rem;
     margin-right: 10px;
     margin-bottom: 0;
   }
@@ -209,9 +202,7 @@
 }
 
 .place-select {
-
   &.active {
-
     .place-select-list {
       height: 130px;
       opacity: 1;
@@ -223,10 +214,10 @@
     position: relative;
     cursor: pointer;
     display: flex;
-    transition: .5s;
+    transition: 0.5s;
 
     &__value {
-      font-size: .875rem;
+      font-size: 0.875rem;
       color: $secondary;
       border-bottom: 1px solid $secondary;
     }
@@ -238,7 +229,7 @@
 
       &::before,
       &::after {
-        content: '';
+        content: "";
         position: absolute;
         right: 0;
         width: 0;
@@ -258,7 +249,6 @@
         border-color: $secondary transparent transparent transparent;
       }
     }
-
   }
 
   &-list {
@@ -275,7 +265,7 @@
     opacity: 0;
     pointer-events: none;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
-    transition: .5s;
+    transition: 0.5s;
 
     @media (min-width: map_get($grid-breakpoints, md)) {
       width: auto;
@@ -291,7 +281,7 @@
     }
 
     &::-webkit-scrollbar-thumb {
-      background: rgba($secondary, .7);
+      background: rgba($secondary, 0.7);
     }
 
     &::-webkit-scrollbar-thumb:hover {
@@ -306,25 +296,23 @@
         position: relative;
         padding-bottom: 2px;
         color: $secondary;
-        font-size: .875rem;
-        transition: .5s;
+        font-size: 0.875rem;
+        transition: 0.5s;
 
         &::before {
-          content: '';
+          content: "";
           position: absolute;
           left: 0;
           bottom: 0;
           width: 0;
           height: 1px;
           background: $secondary;
-          transition: .5s;
+          transition: 0.5s;
         }
       }
 
       &:hover {
-
         span {
-
           &::before {
             width: 100%;
           }
@@ -350,14 +338,14 @@
       display: block;
       padding: 25px 0;
       color: #fff;
-      font-size: .875rem;
+      font-size: 0.875rem;
 
       @media (min-width: map_get($grid-breakpoints, xl)) {
         font-size: 1rem;
       }
 
       &::before {
-        content: '';
+        content: "";
         position: absolute;
         left: 50%;
         right: 50%;
@@ -365,22 +353,20 @@
         height: 3px;
         opacity: 0;
         background: #fff;
-        transition: left .5s, right .5s, opacity .8s;
+        transition: left 0.5s, right 0.5s, opacity 0.8s;
       }
 
       &:hover {
-
         &::before {
           left: 0;
           right: 0;
           opacity: 1;
-          transition: left .5s, right .5s, opacity .2s;
+          transition: left 0.5s, right 0.5s, opacity 0.2s;
         }
       }
     }
 
     &--output {
-
       a {
         display: flex;
         align-items: center;
@@ -417,7 +403,6 @@
   z-index: 110;
 
   &.active {
-
     .line {
       position: absolute;
       top: 20px;
@@ -443,7 +428,7 @@
     background: #fff;
     margin-bottom: 2px;
     transform: rotate(0);
-    transition: .5s;
+    transition: 0.5s;
 
     &--bottom {
       width: 13px;

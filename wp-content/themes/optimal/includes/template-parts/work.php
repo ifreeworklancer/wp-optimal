@@ -19,15 +19,23 @@ $work_video_link = get_field('work_video_link', $pageID);
                 </div>
             </div>
             <div class="col-sm-9 col-lg-8">
-                <div class="video-play reveal-bottom"
-                     style="background-image: url(<?= getVideoImageLinkAttribute($work_video_link) ?>);"
-                     data-youtube="<?= getVideoLinkAttribute($work_video_link) ?>">
-                    <svg width="48" height="48">
-                        <use xlink:href="#play-icon"></use>
-                    </svg>
+
+                <?php $videos = get_field('work_video_slider', $pageID); ?>
+
+                <div class="video-slider custom-slider">
+
+                    <?php foreach ($videos as $video) : ?>
+                        <div class="video-slider__item">
+                            <div class="video-play" style="background-image: url(<?= getVideoImageLinkAttribute($video['work_video_link']) ?>);" data-youtube="<?= getVideoLinkAttribute($video['work_video_link']) ?>">
+                                <svg width="48" height="48">
+                                    <use xlink:href="#play-icon"></use>
+                                </svg>
+                            </div>
+                            <figure class="decor-image" style="background-image: url(<?= get_theme_file_uri('images/icons/video-icon.png') ?>);"></figure>
+                        </div>
+                    <?php endforeach; ?>
+
                 </div>
-                <figure class="decor-image"
-                        style="background-image: url(<?= get_theme_file_uri('images/icons/video-icon.png') ?>);"></figure>
             </div>
         </div>
     </div>
